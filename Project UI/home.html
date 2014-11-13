@@ -1,0 +1,52 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="arrow_box">
+<center>
+<div id="letterpress">
+<h1>HTTP PROXY SERVER</h1>
+</div>
+<center>
+</div>
+<br><br><br>
+<center>
+<form action="http://127.0.0.1:8080/myaction" method="post">
+<table class="pure-table">
+    <thead>
+        <tr>
+            <th>Target URL</th>
+            <th>port</th>
+            <th>Latency</th>
+            <th>Gzipper</th>
+            <th>Response Time</th>
+            <th>Unique Request ID</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><input type="text" id="url" name="url" placeholder="Enter Target URL here"></td>
+            <td><input type="text" id="port" name="port" size="1"></td>
+		<td><input type="text" id="latency" name="latency" size="1"></td>
+		<td><input type="checkbox" id="gzipper" name="gzipper" value="gzip"></td>
+		<td><input type="checkbox" id="restime" name="restime" value="restime"></td>
+		<td><input type="checkbox" id="unireqid" name="unireqid" value="unireqid"></td>
+        </tr>
+
+    </tbody>
+</table>
+<br><br><br>
+<input id="gobutton" type="submit" value="Go!" /> <!--the text in the quotes after value will appear on the button-->
+<center>
+</form>
+</body>
+</html>
